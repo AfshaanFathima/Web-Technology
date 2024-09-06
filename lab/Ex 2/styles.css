@@ -1,0 +1,15 @@
+.animal img {
+    width: 100%;
+    border: 3px solid #2c6c2f; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.animal h2 {
+    color: #2c6c2f; 
+    background-color: #d4edda; 
+    padding: 5px;
+    border-radius: 5px;
+}
+.animal p {
+    font-weight: bold;
+}
