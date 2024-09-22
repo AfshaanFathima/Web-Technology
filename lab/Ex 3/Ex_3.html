@@ -46,8 +46,9 @@
             border-radius: 10px;
         }
         .image-box {
-            width: 350px;
-            height: 350px;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
             display: flex;
             background-color: #fff;
             justify-content: center;
@@ -66,6 +67,37 @@
             font-size: 1.5rem;
             text-align: center;
         }
+        
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .color-block {
+                height: 80px;
+                width: 80px;
+                font-size: 1rem;
+            }
+
+            #colorDescription {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .color-block {
+                height: 70px;
+                width: 70px;
+                margin: 10px;
+                font-size: 0.9rem;
+            }
+
+            .image-box {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -74,33 +106,33 @@
         <button class="btn btn-primary" style="position: absolute; top: 10px; left: 10px;" onclick="goBack()">Back</button>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: calc(100vh - 80px);">
+    <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center" style="height: calc(100vh - 80px);">
         <!-- Left half with colors -->
-        <div class="col-md-6 p-4">
+        <div class="col-md-6 p-4 d-flex flex-column align-items-center">
             <h2 class="text-center" style="font-family: 'Luckiest Guy', cursive;">Select a Color</h2>
             <div class="row justify-content-center">
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: red;" onclick="changeImage('red')">Red</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: blue;" onclick="changeImage('blue')">Blue</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: green;" onclick="changeImage('green')">Green</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: yellow; color:black;" onclick="changeImage('yellow')">Yellow</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: orange;" onclick="changeImage('orange')">Orange</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: purple;" onclick="changeImage('purple')">Purple</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: pink;" onclick="changeImage('pink')">Pink</div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <div class="color-block" style="background-color: brown;" onclick="changeImage('brown')">Brown</div>
                 </div>
             </div>
