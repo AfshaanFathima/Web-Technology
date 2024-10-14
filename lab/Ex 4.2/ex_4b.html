@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #Time{
+            color: green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            
+        }
+        img {
+            display: inline-block;
+            margin: 0;
+            
+        }
+
+        
+        #text {
+            display: none;
+        }
+    </style>
+    <script>
+        function time()
+        {
+            var date=new Date();
+            var ct=date.getHours() +":"+date.getMinutes()+":" +date.getSeconds()+":" +date.getMilliseconds();
+            document.getElementById("Time").innerHTML=ct;
+            setInterval("time()",100);
+
+        }
+
+        function showText(text)
+        {
+            document.getElementById("text").innerHTML=text;
+            document.getElementById("text").style.display = "block";
+        }   
+        function hide()
+        {
+            document.getElementById("text").innerHTML="";
+            document.getElementById("text").style.display = "none";
+        }
+        function over() {
+            document.getElementById('house').innerHTML = "Mouse Inside house!";
+        }            
+            function out() {
+            document.getElementById('house').innerHTML = "Mouse Outside house!";
+        } 
+        
+
+    </script>
+</head>
+<body onclick="document.body.style.backgroundColor = '#F4C2C2'">
+    <center>
+        <div>
+            <h1 id="Time">00:00:00</h1>
+            <h2>(hr:min:s:ms)</h2>
+            <input style="background-color: lightseagreen;width: 150px;height: 50px;font-size: larger;border-radius: 50%;" type="button" value="Get Time"  onclick="time()"></br></br></br>
+        </div>
+        
+        <h2 id="house">Bring your mouse inside the house!</h2>
+        <div >
+            <img style="width: 420px; height: 420px; margin: 30px;" src="house.png" onmouseover = "over()" onmouseout = "out()" alt="Inside image" >
+        </div>
+        <div>
+            <img src="sun__1.png" id="image1" onMouseOver="showText('Shine')" onMouseOut="hide();"></br>
+            <h2 id="text" ></h2>
+            <img src="sun__2.png" id="image2" onMouseOver="showText('Bright!')" style="z-index: -1;" onMouseOut="hide();">
+        </div>
+ 
+    </center>
+</body>
+</html>
