@@ -4,28 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Person Management</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #FFFBF0; /* Soft pastel yellow */
+            color: #444;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #FF6F61; /* Coral */
+            font-size: 3em;
+        }
+        h2 {
+            color: #FF8A75; /* Lighter coral */
+            font-size: 2em;
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFF5E4; /* Cream */
+            border: 2px solid #FF6F61;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 1.2em;
+        }
+        input[type="text"], input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #FF6F61;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF8A75;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: #FF6F61;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Person Management</h1>
+    <h1>🌟 Person Management 🌟</h1>
     <hr>
 
     <!-- Insert Form -->
     <h2>Insert Name and Age</h2>
     <form action="InsertPersonServlet" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required><br><br>
-        <input type="submit" value="Insert">
+        <label for="name">🧸 Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name" required><br><br>
+        <label for="age">🎂 Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required><br><br>
+        <input type="submit" value="✨ Insert ✨">
     </form>
     <hr>
 
     <!-- Fetch Form -->
     <h2>Fetch Names by Age</h2>
     <form action="FetchPersonByAgeServlet" method="get">
-        <label for="age">Enter Age:</label>
-        <input type="number" id="age" name="age" required><br><br>
-        <input type="submit" value="Fetch Names">
+        <label for="age">🎯 Enter Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter age" required><br><br>
+        <input type="submit" value="🔍 Fetch Names">
     </form>
 </body>
 </html>

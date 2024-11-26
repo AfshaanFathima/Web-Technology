@@ -5,14 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #FFFBF0; /* Pastel yellow */
+            color: #444;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #FF6F61; /* Coral */
+            font-size: 2.5em;
+        }
+        form {
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #FFF5E4; /* Cream */
+            border: 2px solid #FF6F61;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #FF6F61;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF8A75;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <h1>User Login</h1>
-    <!--Invoke sessioncount servlet as soon as the form is submitted-->
+    <h1>🌟 Welcome to the Login Page! 🌟</h1>
+    <p>Enter your credentials to start your fun journey!</p>
     <form action="userhitcount" method="GET">
-        UserName: <input type="text" name="uname"><br>
-        Password: <input type="password" name="pwd"><br>
-        <input type="submit" value="SUBMIT">
+        <label for="uname">🧸 UserName:</label><br>
+        <input type="text" id="uname" name="uname" placeholder="Enter your username" required><br>
+        <label for="pwd">🔒 Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required><br>
+        <input type="submit" value="🎉 Let's Go! 🎉">
     </form>
 </body>
 </html>
