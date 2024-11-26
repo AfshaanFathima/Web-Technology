@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning App</title>
+    <style>
+        body {
+            background-color: #fbe7c6;
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        form {
+            background-color: #ffe4b5;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            border: 2px solid #ffcc5c;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Kids Learning App!</h1>
+    <form method="POST" action="hiddenHandler">
+        <p>What's your name?</p>
+        <input type="text" name="userName" required /><br/><br/>
+        <!-- Hidden field to pass data -->
+        <input type="hidden" name="appName" value="Kids Learning App" />
+        <input type="submit" value="Start Learning!" />
+    </form>
+</body>
+</html>

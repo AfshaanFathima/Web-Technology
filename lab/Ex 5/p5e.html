@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Management</title>
+</head>
+<body>
+    <h1>Person Management</h1>
+    <hr>
+
+    <!-- Insert Form -->
+    <h2>Insert Name and Age</h2>
+    <form action="InsertPersonServlet" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" value="Insert">
+    </form>
+    <hr>
+
+    <!-- Fetch Form -->
+    <h2>Fetch Names by Age</h2>
+    <form action="FetchPersonByAgeServlet" method="get">
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" value="Fetch Names">
+    </form>
+</body>
+</html>

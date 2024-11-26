@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Adventure Land</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f7d9;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        form {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ffde59;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        input[type="text"] {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            font-size: 1em;
+            background-color: #61ff88;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #52e678;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Adventure Land!</h1>
+    <p>Enter your adventurer's name to start your journey!</p>
+    <form action="sessid1">
+        Adventurer's Name: <input type="text" name="userName" required /><br />
+        <input type="submit" value="Start Adventure!" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Form</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Soft pink background */
+            font-family: 'Comic Sans MS', sans-serif; /* Playful font */
+        }
+        form {
+            background-color: #fff7e6; /* Light yellow background for form */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+            width: 300px;
+        }
+        p {
+            font-size: 24px;
+            color: #ff66b2; /* Pinkish color for text */
+        }
+       
+        label:hover img {
+            transform: scale(1.1); /* Slight enlargement of image on hover */
+            transition: transform 0.2s ; /* Smooth transition */
+        }
+        img {
+            margin: 10px;
+            border-radius: 10px; /* Rounded corners for images */
+            border: 2px solid #ff66b2; /* Pink border around images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+        }
+        input[type="submit"] {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #ff66b2; /* Pink button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff3385; /* Darker pink when hovered */
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form action="HelloForm" method="GET">
+        <p>Select an Animal:</p>
+
+        <!-- Monkey Radio Button with Image -->
+        <input type="radio" id="monkey" name="animal" value="Monkey">
+        <label for="monkey">
+            <img src="https://blog.allpetsmedical.com/wp-content/uploads/2018/10/vervet_monkey_south_africa_wildlife_wild_animal_nature_mammal-702582-1024x768.jpg" alt="Monkey" width="200" height="200">
+        </label><br>
+
+        <!-- Elephant Radio Button with Image -->
+        <input type="radio" id="elephant" name="animal" value="Elephant">
+        <label for="elephant">
+            <img src="https://cdn.britannica.com/02/152302-050-1A984FCB/African-savanna-elephant.jpg" alt="Elephant" width="200" height="200">
+        </label><br>
+
+        <!-- Dog Radio Button with Image -->
+        <input type="radio" id="dog" name="animal" value="Dog">
+        <label for="dog">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="Dog" width="200" height="200">
+        </label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+   </center>
+</body>
+</html>

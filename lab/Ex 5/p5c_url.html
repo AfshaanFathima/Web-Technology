@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning App</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        form {
+            background-color: #f8bbd0;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            border: 2px solid #f06292;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Kids Learning App!</h1>
+    <form method="GET" action="urlHandler1">  
+        <p>Enter Your Name:</p>
+        <input type="text" name="userName" required /><br/><br/>
+        <input type="submit" value="Start Learning!" />
+    </form>
+</body>
+</html>

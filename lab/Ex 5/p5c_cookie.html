@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your Magic Cookie!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #FFEE93;
+            text-align: center;
+            padding: 50px;
+        }
+        h2 {
+            color: #FF6F61;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            border: 2px solid #6A0572;
+            border-radius: 5px;
+            padding: 10px;
+            width: 60%;
+            font-size: 18px;
+        }
+        input[type="submit"] {
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Set Your Magic Cookie</h2>
+    <p>Enter your magical word to create a cookie!</p>
+    <form name="cookieForm" method="POST" action="kidsCookieServlet">
+        <input type="text" name="userin" placeholder="Type your magical word here..." /><br/><br/>
+        <input type="submit" value="Set Cookie" />
+    </form>
+    <img src="https://digiday.com/wp-content/uploads/sites/3/2021/03/COOKIE-01.jpg" alt="Cookie Cartoon" width="200">
+</body>
+</html>

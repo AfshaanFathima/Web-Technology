@@ -1,0 +1,123 @@
+<web-app>
+
+    <!-- basic-->
+
+    <servlet>
+         <servlet-name>Servlet_basic</servlet-name>
+         <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>Servlet_basic</servlet-name>
+         <url-pattern>/basic</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p5a.java -->
+
+    <servlet>
+         <servlet-name>Servlet1</servlet-name>
+         <servlet-class>p5a</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>Servlet1</servlet-name>
+         <url-pattern>/heyy</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p5b.java -->
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>p5b</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p5c_cookie.java -->
+    <servlet>
+    <servlet-name>kidsCookieServlet</servlet-name>
+    <servlet-class>p5c_cookie</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>kidsCookieServlet</servlet-name>
+    <url-pattern>/kidsCookieServlet</url-pattern>
+</servlet-mapping>
+    <!-- Program p5c_hidden.java -->
+    <servlet>
+    <servlet-name>hiddenFieldHandler</servlet-name>
+    <servlet-class>p5c_hidden</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>hiddenFieldHandler</servlet-name>
+    <url-pattern>/hiddenHandler</url-pattern>
+</servlet-mapping>
+<!-- Program p5c_url1 and url2.java -->
+<servlet>
+    <servlet-name>urlHandler1</servlet-name>
+    <servlet-class>p5c_url1</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>urlHandler1</servlet-name>
+    <url-pattern>/urlHandler1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>urlHandler2</servlet-name>
+    <servlet-class>p5c_url2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>urlHandler2</servlet-name>
+    <url-pattern>/urlHandler2</url-pattern>
+</servlet-mapping>
+
+
+<!-- Program p5c_https1 and https2.java -->
+<servlet>
+    <servlet-name>p10_s1</servlet-name>
+    <servlet-class>p5c_https1</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>p10_s1</servlet-name>
+    <url-pattern>/sessid1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>p10_s2</servlet-name>
+    <servlet-class>p5c_https2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>p10_s2</servlet-name>
+    <url-pattern>/sessid2</url-pattern>
+</servlet-mapping>
+
+    <!-- Program p5d.java -->
+    <servlet>
+        <servlet-name>userhitcount</servlet-name>
+        <servlet-class>p5d</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>userhitcount</servlet-name>
+        <url-pattern>/userhitcount</url-pattern>
+    </servlet-mapping>
+
+     <!-- Program p5e_insert.java -->
+    <servlet>
+        <servlet-name>InsertPersonServlet</servlet-name>
+        <servlet-class>p5e_insert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertPersonServlet</servlet-name>
+        <url-pattern>/InsertPersonServlet</url-pattern>
+    </servlet-mapping>
+     <!-- Program p5e_fetch.java -->
+    <servlet>
+        <servlet-name>FetchPersonByAgeServlet</servlet-name>
+        <servlet-class>p5e_fetch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FetchPersonByAgeServlet</servlet-name>
+        <url-pattern>/FetchPersonByAgeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
