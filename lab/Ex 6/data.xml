@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lessons>
+    <lesson>
+        <title>Alphabet Fun</title>
+        <topic>English</topic>
+        <level>Beginner</level>
+        <duration>15 mins</duration>
+        <description>Learn the English alphabet with fun animations and songs.</description>
+    </lesson>
+    <lesson>
+        <title>Counting Basics</title>
+        <topic>Math</topic>
+        <level>Beginner</level>
+        <duration>10 mins</duration>
+        <description>Practice counting numbers from 1 to 20 using colorful visuals.</description>
+    </lesson>
+    <lesson>
+        <title>Animal Sounds</title>
+        <topic>Science</topic>
+        <level>Beginner</level>
+        <duration>20 mins</duration>
+        <description>Discover different animals and the sounds they make.</description>
+    </lesson>
+    <lesson>
+        <title>Shapes and Colors</title>
+        <topic>Art</topic>
+        <level>Intermediate</level>
+        <duration>25 mins</duration>
+        <description>Identify basic shapes and learn about primary colors.</description>
+    </lesson>
+    <lesson>
+        <title>Story Time</title>
+        <topic>English</topic>
+        <level>All Levels</level>
+        <duration>30 mins</duration>
+        <description>Enjoy classic fairy tales with engaging illustrations.</description>
+    </lesson>
+</lessons>
