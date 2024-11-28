@@ -26,9 +26,9 @@ public class p5e_insert extends HttpServlet {
             out.println("h2 { color: #FF6F61; font-size: 2em; }");
             out.println("p { font-size: 1.2em; color: #444; }");
             out.println("</style></head><body>");
-            out.println("<h2>🎉 Data Inserted Successfully! 🎉</h2>");
-            out.println("<p>👦 Name: " + request.getParameter("name") + "</p>");
-            out.println("<p>🎂 Age: " + request.getParameter("age") + "</p>");
+            out.println("<h2> Data Inserted Successfully! </h2>");
+            out.println("<p> Name: " + request.getParameter("name") + "</p>");
+            out.println("<p> Age: " + request.getParameter("age") + "</p>");
             out.println("</body></html>");
 
             pstmt.close();

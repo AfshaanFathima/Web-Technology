@@ -25,12 +25,12 @@ public class p5e_fetch extends HttpServlet {
             out.println("h2 { color: #FF6F61; font-size: 2em; }");
             out.println("p { font-size: 1.2em; color: #444; }");
             out.println("</style></head><body>");
-            out.println("<h2>🎉 Names of Kids with Age " + request.getParameter("age") + " 🎉</h2>");
+            out.println("<h2> Names of Kids with Age " + request.getParameter("age") + " </h2>");
 
             boolean hasResults = false;
             while (rs.next()) {
                 hasResults = true;
-                out.println("<p>👦 " + rs.getString("Name") + "</p>");
+                out.println("<p>" + rs.getString("Name") + "</p>");
             }
             if (!hasResults) {
                 out.println("<p>No kids found with the given age.</p>");
