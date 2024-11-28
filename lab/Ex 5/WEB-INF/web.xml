@@ -91,10 +91,10 @@
     <url-pattern>/sessid2</url-pattern>
 </servlet-mapping>
 
-    <!-- Program p5d.java -->
+    <!-- Program p5e.java -->
     <servlet>
         <servlet-name>userhitcount</servlet-name>
-        <servlet-class>p5d</servlet-class>
+        <servlet-class>p5e</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -102,53 +102,23 @@
         <url-pattern>/userhitcount</url-pattern>
     </servlet-mapping>
 
-     <!-- Program p5e_insert.java -->
+     <!-- Program p5d_insert.java -->
     <servlet>
         <servlet-name>InsertPersonServlet</servlet-name>
-        <servlet-class>p5e_insert</servlet-class>
+        <servlet-class>p5d_insert</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>InsertPersonServlet</servlet-name>
         <url-pattern>/InsertPersonServlet</url-pattern>
     </servlet-mapping>
-     <!-- Program p5e_fetch.java -->
+     <!-- Program p5d_fetch.java -->
     <servlet>
         <servlet-name>FetchPersonByAgeServlet</servlet-name>
-        <servlet-class>p5e_fetch</servlet-class>
+        <servlet-class>p5d_fetch</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FetchPersonByAgeServlet</servlet-name>
         <url-pattern>/FetchPersonByAgeServlet</url-pattern>
     </servlet-mapping>
-    <!-- Program p12_db1.java -->
-    <servlet>
-        <servlet-name>p12_db1</servlet-name>
-        <servlet-class>p12_db1</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>p12_db1</servlet-name>
-        <url-pattern>/db1</url-pattern>
-    </servlet-mapping>
-<!-- Program p12_db2.java -->
-    <servlet>
-        <servlet-name>p12_db2</servlet-name>
-        <servlet-class>p12_db2</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>p12_db2</servlet-name>
-        <url-pattern>/db2</url-pattern>
-    </servlet-mapping>
-
-<!-- Program p12_db3.java -->
-    <servlet>
-        <servlet-name>p12_db3</servlet-name>
-        <servlet-class>p12_db3</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>p12_db3</servlet-name>
-        <url-pattern>/db3</url-pattern>
-    </servlet-mapping>
+    
 </web-app>
