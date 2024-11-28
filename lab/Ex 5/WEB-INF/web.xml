@@ -121,4 +121,8 @@
         <url-pattern>/FetchPersonByAgeServlet</url-pattern>
     </servlet-mapping>
     
+<<<<<<< HEAD
 </web-app>
+=======
+</web-app>
+>>>>>>> 7bde57531bf7f8de5c73c432f6518faf037e5459
